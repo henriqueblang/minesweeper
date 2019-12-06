@@ -65,12 +65,46 @@ GAME_MODES = {
         -- Block scale factor
         blockScale = 4
 
+    },
+
+    ["Hard"] = {
+        -- Amount of mines
+        mines = 99,
+        -- Amount of flags available
+        flags = 99,
+
+        -- Board starting x coordinate relative to window coordinates
+        boardX = 0,
+        -- Board starting y coordinate relative to window coordinates
+        boardY = 200,
+        -- Board width (x-axis) NOT in pixels, but in blocks
+        boardWidth = 30,
+        -- Board height (y-axis) NOT in pixels, but in blocks
+        boardHeight = 16,
+        -- Window width
+        windowWidth = 1440,
+        -- Window height
+        windowHeight = 968,
+
+        -- Timer text x coordinate
+        timerX = 700,
+        -- Timer text y coordinate
+        timerY = 50,
+
+        -- Flags available text x coordinate
+        flagX = 1340,
+        -- Flags available text y coordinate
+        flagY = 50,
+
+        -- Block scale factor
+        blockScale = 3
+
     }
 
 }
 
 -- Difficulty
-config = GAME_MODES["Medium"]
+config = GAME_MODES["Beginner"]
 
 function love.conf(t)
     t.window.title = "Minesweeper"
