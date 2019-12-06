@@ -1,3 +1,3 @@
 # minesweeper
 Simple Minesweeper using LÖVE game engine.
-Change difficulty in 'config.lua'.
+Change difficulty in ```config.lua```.
