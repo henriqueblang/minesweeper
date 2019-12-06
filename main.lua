@@ -109,7 +109,7 @@ function love.mousereleased(x, y, button, istouch)
         if firstClick then firstClick = false end
 
     elseif button == RIGHT_CLICK then
-        if not block[2] and remainingFlags == 0 then return end
+        if (not block[2] and remainingFlags == 0) or (block[1] ~= HIDDEN and block[1] ~= MINE) then return end
 
         remainingFlags = remainingFlags + (block[2] and 1 or -1)
 
